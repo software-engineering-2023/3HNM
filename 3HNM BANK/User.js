@@ -14,21 +14,6 @@ function Register() {
         window.location.assign('Login.html')
 }
 
-function Register() {
-    var id = document.forms["registrationForm"]["nationalID"].value;
-    var username = document.forms["registrationForm"]["username"].value;
-
-    if (id == "123456789") {
-        alert("Nationa ID already exists, Login instead");
-    }
-    if (username == "Halla") {
-        alert("Username already exists");
-    }
-    else {
-        window.location.assign('Login.html');
-    }
-}
-
 function loginredirect() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -41,6 +26,9 @@ function loginredirect() {
     }
     else if (username === "Menna" && password === "123") {
         window.location.assign('Admin.html');
+    }
+    else if (username === "Nouran") {
+        alert('Account has been disabled')
     }
 
     else {
