@@ -30,6 +30,9 @@ function loginredirect() {
     else if (username === "Nouran") {
         alert('Account has been disabled')
     }
+    else if (username === "Habiba" && password === "123") {
+        window.location.assign('Banker View Announcement.html');
+    }
 
     else {
         alert("Incorrect Username or Password")
