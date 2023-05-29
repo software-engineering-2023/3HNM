@@ -43,7 +43,8 @@
             border-radius: 4px;
         }
 
-        input[type="submit"] {
+        input[type="button"] {
+            width: 90%;
             background-color: #4caf50;
             color: white;
             padding: 10px 20px;
@@ -51,10 +52,22 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            margin-left: 20px;
         }
 
-        input[type="submit"]:hover {
+        input[type="button"]:hover {
             background-color: #45a049;
+        }
+
+        .Back-buttons {
+            margin-top: 20px;
+            align-items: center;
+            position: relative;
+            text-align: center;
+        }
+
+        a:visited {
+            color: rgb(44, 44, 188);
         }
     </style>
     <script>
@@ -105,7 +118,12 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
 
-        <input type="submit" value="Register">
+        <input type="button" value="Register" onclick="window.location.assign('Login.html')">
+
+        <div class="Back-buttons">
+            <a type="button" href="Login.html"> Login </a> <br><br>
+            <a type="button" href="index.html"> Back To Home Page </a> <br>
+        </div>
     </form>
 </body>
 
