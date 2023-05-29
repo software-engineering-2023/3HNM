@@ -548,7 +548,7 @@ input[type=radio] {
     display: flex;
     width: 100%;
     height: 25%;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     /* background-color: blue; */
     margin: auto;
 }
@@ -559,8 +559,8 @@ input[type=radio] {
     float: left;
     /* background-color: aqua; */
     text-align: left;
-    border: 2px solid blueviolet;
-    padding: 30px;
+    /* border: 2px solid blueviolet; */
+    padding: 10px;
     margin-left: 20px;
 }
 
@@ -576,11 +576,16 @@ input[type=radio] {
 
 }
 
+.personal-words P {
+    padding: 7PX;
+
+}
+
 .personal-inputs {
     -webkit-flex: 0.2;
     -ms-flex: 0.2;
     flex: 0.2;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: calc(38vh - 100px);
     /* border: 3px solid seagreen; */
     float: right;
@@ -597,8 +602,8 @@ input[type=radio] {
     height: 100%;
     float: left;
     text-align: left;
-    border: 2px solid blue;
-    padding: 30px;
+    /* border: 2px solid blue; */
+    padding: 10px;
 }
 
 .car-words {
@@ -607,8 +612,13 @@ input[type=radio] {
     flex: 0.5;
     /* border: 3px solid salmon; */
     float: left;
-    margin-left: 8%;
     margin-top: 20px;
+    width: 200px;
+    padding-right: 0;
+}
+
+.car-words P {
+    padding: 7PX;
 }
 
 .car-inputs {
