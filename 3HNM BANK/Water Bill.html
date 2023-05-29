@@ -30,17 +30,25 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="css/all.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="User.js"></script>
+
     <title>Water Bill Receipt</title>
     <style>
         th,
         td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
             border-bottom: 1px solid #ddd;
         }
 
         th {
             background-color: #cbd5cb;
+        }
+
+        #rembutton {
+            padding: 0;
+            text-align: center;
+            margin-left: 0;
         }
     </style>
 </head>
@@ -111,12 +119,15 @@
                         <th>Description</th>
                         <th>Due Date</th>
                         <th>Amount</th>
+                        <th> </th>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Charges of the month</td>
                         <td>June, 6th</td>
                         <td>349</td>
+                        <td id="rembutton"><input type="button" value="Set Reminder" onclick="setReminder()"></td>
+
                     </tr>
                     <tr>
                         <td>2</td>
