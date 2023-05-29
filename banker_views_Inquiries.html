@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banker Inquiries Webpage</title>
+</head>
+<body>
+  <h1>Customer Inquires</h1>
+  <table>
+    <tr>
+      <th>Customer ID</th>
+      <th>Inquiry</th>
+      <th>Date of Inquiry</th>
+      <th>Status</th>
+      <th>Respond</th>
+    </tr>
+    <tr>
+      <td>01995550873347</td>
+      <td>I would like to transfer money to a Swiss bank but in Swiss Frank</td>
+      <td>5/23/2023</td>
+      <td>handled</td>
+      <td><button Button ="respond">Respond to inquiry</button></td>
+    </tr>
+    <tr>
+      <td>88800025455218</td>
+      <td>I would like to inquire about the procedures for loan applications</td>
+      <td>5/23/2023</td>
+      <td>handled</td>
+      <td><button Button ="respond">Respond to inquiry</button></td>
+    </tr>
+    <tr>
+      <td>13846839958690</td>
+      <td>How do I apply for for a new credit card?</td>
+      <td>5/23/2023</td>
+      <td>Unhandled</td>
+      <td><button onclick ="respond()">Respond to inquiry</button></td>
+    </tr>
+    <tr>
+      <td>90343277493908</td>
+      <td>What is the maximum number of credit cards I can own?</td>
+      <td>5/23/2023</td>
+      <td>Unhandled</td>
+      <td><button onclick ="respond()">Respond to inquiry</button></td>
+    </tr>
+    <tr>
+      <td>28201074638929</td>
+      <td>How do I apply for for a new credit card?</td>
+      <td>5/23/2023</td>
+      <td>Unhandled</td>
+      <td><button onclick ="respond()">Respond to inquiry</button></td>
+    </tr>
+
+    <style>
+        .popup {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 300px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+    
+        .popup-header {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+    
+        .text-box {
+          width: 100%;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          box-sizing: border-box;
+        }
+
+        .send-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+        .close-button {
+      float: right;
+      cursor: pointer;
+    }
+      </style>
+
+    <div id="myPopup" class="popup">
+        <span class="close-button" onclick="closePopup()">&times;</span>
+        <div class="popup-header">Respond to client</div>
+        <input type="text" class="text-box" placeholder="Enter your text">
+        <button class="send-button" onclick="sendMessage()">Send</button>
+      </div>
+
+    <script>
+    function respond() {
+      // Get the popup element
+      var popup = document.getElementById("myPopup");
+
+      // Show the popup
+      popup.style.display = "block";
+    }
+
+    function sendMessage() {
+      var input = document.querySelector("#myPopup .text-box");
+      var message = input.value;
+      // Perform any necessary actions with the message (e.g., send it to a server, display it somewhere, etc.)
+      console.log("Message sent:", message);
+      input.value = ""; // Clear the input field
+      closePopup(); // Close the popup
+    }
+
+    function closePopup() {
+      var popup = document.getElementById("myPopup");
+      popup.style.display = "none";
+    }
+    </script>
+  
+</table>
+</body>
+</html>
