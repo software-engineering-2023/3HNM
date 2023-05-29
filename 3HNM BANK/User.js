@@ -1,5 +1,18 @@
 'use strict';
 
+function Register() {
+    var id = document.forms["registrationForm"]["nationalID"].value;
+    var username = document.forms["registrationForm"]["username"].value;
+
+    if (id === "123456789") {
+        alert('National ID already exists, Login instead');
+    }
+    else if (username === "Halla") {
+        alert('Username already exists')
+    }
+    else
+        window.location.assign('Login.html')
+}
 
 function loginredirect() {
     var username = document.getElementById("username").value;
@@ -9,10 +22,10 @@ function loginredirect() {
     if (username === "Halla" && password === "123") {
         window.location.assign('Dashboard.html');
     }
-    if (username === "Hagar" && password === "123") {
+    else if (username === "Hagar" && password === "123") {
         window.location.assign('hagar.html');
     }
-    if (username === "Menna" && password === "123") {
+    else if (username === "Menna" && password === "123") {
         window.location.assign('Admin.html');
     }
 
