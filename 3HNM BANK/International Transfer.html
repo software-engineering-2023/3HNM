@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Dashboard</title>
+
+    <!-- slider stylesheet -->
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style1.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>International Transfer</title>
+    <style>
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group select,
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section strats -->
+    <header class="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <img src="logo3.png" width="100" height="50">
+        </div>
+        </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div class="column sidebar">
+            <ul>
+                <li id="dash"><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="Transactions.html">Transactions</a></li>
+                <li><a href="#" class="first-btn">Transfers
+                        <i class="fa-solid fa-caret-down first"></i>
+                    </a>
+                    <ul class="first-show">
+                        <li><a href="Internal Transfer.html">Internal Transfer</a></li>
+                        <li><a href="Domestic Transfer.html">Domestic Transfer</a></li>
+                        <li><a href="International Transfer.html">External Transfer</a></li>
+                        <li><a href="View All Transfers.html">View All Transfers</a></li>
+                    </ul>
+                </li>
+                <li><a href="Credit Card.html">Credit Card</a></li>
+                <li><a href="Loan.html">Loans</a></li>
+
+
+                <li><a href="#" class="second-btn">Pay Bills
+                        <i class="fa-solid fa-caret-down second"></i>
+                    </a>
+                    <ul class="second-show">
+                        <li id="gas"><a href="gas bill.html">Gas</a></li>
+                        <li id="water"><a href="Water Bill.html">Water</a></li>
+                        <li id="telephone"><a href="Telephone Bill.html">Telephone</a></li>
+                        <li id="electricity"><a href="Electricity Bill.html">Electricity</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="third-btn">Reminders
+                        <i class="fa-solid fa-caret-down third"></i>
+                    </a>
+                    <ul class="third-show">
+                        <li><a href="#">Set Reminders</a></li>
+                        <li><a href="#">View Reminders</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+
+        <div class="column middle">
+            <div class="container">
+                <h2>International Transfer</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="transferDate">Transfer Date:</label>
+                        <input type="date" id="transferDate" name="transferDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentFrom">Payment From Account:</label>
+                        <select id="paymentFrom" name="paymentFrom" required>
+                            <option value="">Select Account</option>
+                            <option value="account1">Account 1</option>
+                            <option value="account2">Account 2</option>
+                            <option value="account3">Account 3</option>
+                        </select>
+                    </div>
+                    <h3>Transfer Details</h3>
+                    <div class="form-group">
+                        <label for="accountName">Account Name:</label>
+                        <input type="text" id="accountName" name="accountName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="accountNumber">Account Number:</label>
+                        <input type="text" id="accountNumber" name="accountNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="iban">IBAN:</label>
+                        <input type="text" id="iban" name="iban" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="swiftCode">SWIFT Code:</label>
+                        <input type="text" id="swiftCode" name="swiftCode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <input type="text" id="amount" name="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="transferDescription">Transfer Description:</label>
+                        <textarea id="transferDescription" name="transferDescription" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Transfer">
+                    </div>
+                </form>
+            </div>
+            <script>
+
+                $('.first-btn').click(function () {
+                    $('.sidebar .first-show').toggleClass("show");
+                    $('.sidebar .first').toggleClass("rotate");
+                })
+
+                $('.second-btn').click(function () {
+                    $('.sidebar .second-show').toggleClass("show1");
+                    $('.sidebar .second').toggleClass("rotate");
+                })
+
+                $('.third-btn').click(function () {
+                    $('.sidebar .third-show').toggleClass("show2");
+                    $('.sidebar .third').toggleClass("rotate");
+
+                })
+
+                $("#transfers").addClass("active").siblings().removeClass("active");
+                $("#internal").addClass("active").siblings().removeClass("active");
+                $('.sidebar ul li').click(function () {
+                    $(this).addClass("active").siblings().removeClass("active");
+                })
+            </script>
+</body>
+
+</html>
