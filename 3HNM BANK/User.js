@@ -7,8 +7,15 @@ function loginredirect() {
 
 
     if (username === "Halla" && password === "123") {
-        window.location.assign('User.html');
+        window.location.assign('Dashboard.html');
     }
+    if (username === "Hagar" && password === "123") {
+        window.location.assign('hagar.html');
+    }
+    if (username === "Menna" && password === "123") {
+        window.location.assign('Admin.html');
+    }
+
     else {
         alert("Incorrect Username or Password")
     }
