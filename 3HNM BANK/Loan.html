@@ -27,6 +27,7 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="css/all.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="User.js"></script>
     <title>Loan</title>
     <style>
         h2 {
@@ -198,46 +199,23 @@
             $('.first-btn').click(function () {
                 $('.sidebar .first-show').toggleClass("show");
                 $('.sidebar .first').toggleClass("rotate");
-            })
+            });
 
             $('.second-btn').click(function () {
                 $('.sidebar .second-show').toggleClass("show1");
                 $('.sidebar .second').toggleClass("rotate");
-            })
+            });
 
             $('.third-btn').click(function () {
                 $('.sidebar .third-show').toggleClass("show2");
                 $('.sidebar .third').toggleClass("rotate");
 
-            })
+            });
 
             $("#Loan").addClass("active").siblings().removeClass("active");
             $('.sidebar ul li').click(function () {
                 $(this).addClass("active").siblings().removeClass("active");
-            })
-
-            function calculate() {
-                let amount = document.getElementById('loanamount').value;
-                let duration = document.getElementById('duration').value;
-
-                if (document.getElementById('personal').checked) {
-                    let interest = amount * 0.14;
-                    let payment = (amount + interest) / duration;
-                    document.getElementById('total-loan').textContent = `Total Loan: ${amount}`;
-                    document.getElementById('Interest Rate').textContent = `Interest Rate: 14%`;
-                    document.getElementById('interest-amount').textContent = `Total Interest: ${interest}`;
-                    document.getElementById('pay-month').textContent = `Payment Per Month: ${payment}`;
-                }
-
-                if (document.getElementById('Car').checked) {
-                    let interest = amount * 0.05;
-                    let payment = (amount + interest) / duration;
-                    document.getElementById('total-loan').textContent = `Total Loan: ${amount}`;
-                    document.getElementById('Interest Rate').textContent = `Interest Rate: 5%`;
-                    document.getElementById('interest-amount').textContent = `Total Interest: ${interest}`;
-                    document.getElementById('pay-month').textContent = `Payment Per Month: ${payment}`;
-                }
-            }
+            });
 
             function loanapp() {
                 if (document.getElementById('personal2').checked) {
