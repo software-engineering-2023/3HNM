@@ -431,6 +431,63 @@ thead {
     margin-bottom: 10px;
 }
 
+/* CREDIT CARD APPLICATION  */
+.credit-app {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #f9f9f9;
+    text-align: left;
+    border: 0.5px solid gray;
+    padding: 30px;
+}
+
+.credit-words {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    /* border: 3px solid salmon; */
+    float: left;
+    margin-left: 8%;
+    margin-top: 10px;
+    padding: 10px;
+    width: 30%;
+}
+
+.credit-words p {
+    padding-bottom: 15px;
+}
+
+.credit-inputs {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    flex-direction: column;
+    height: calc(38vh - 100px);
+    /* border: 3px solid seagreen; */
+    float: right;
+    margin-right: 30%;
+    margin-top: 10px;
+}
+
+#credit-card {
+    display: none;
+}
+
+#credit-card.active {
+    display: block;
+}
+
+#creditsubmit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#applycredit {
+    margin-top: 0;
+
+}
+
 /* CREDIT CARD ENDS  */
 
 
@@ -652,13 +709,55 @@ p {
 }
 
 
-
-
-
-
-
+/* REMINDER ENDS  */
 
 /* PROFILE BUTTON  */
+
+
+/* NOTIFICATIONS PAGE  */
+.notification-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: #f1f1f1;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.notification.new {
+    background-color: #cbd5cb;
+}
+
+.notification-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #268426;
+    margin-right: 10px;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.notification-content p {
+    margin: 5px 0;
+}
+
+/* NOTIFICATION ENDS  */
+
 
 .dropbtn {
     width: 100%;
@@ -694,10 +793,59 @@ p {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: black;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+/* POPUP DESIGN  */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-box {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.send-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+}
+
+/* POPUP DESIGN ENDS  */

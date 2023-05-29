@@ -14,10 +14,24 @@ function Register() {
         window.location.assign('Login.html')
 }
 
+function Register() {
+    var id = document.forms["registrationForm"]["nationalID"].value;
+    var username = document.forms["registrationForm"]["username"].value;
+
+    if (id == "123456789") {
+        alert("Nationa ID already exists, Login instead");
+    }
+    if (username == "Halla") {
+        alert("Username already exists");
+    }
+    else {
+        window.location.assign('Login.html');
+    }
+}
+
 function loginredirect() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-
 
     if (username === "Halla" && password === "123") {
         window.location.assign('Dashboard.html');
@@ -47,6 +61,14 @@ function helpsubmit() {
     else {
         alert("please provide us with more details to your problem, Thank you")
     }
+}
+function transfer() {
+    let valid = true;
+    $('[required]').each(function () {
+        if ($(this).is(':invalid') || !$(this).val()) valid = false;
+    })
+    if (!valid) alert("Please fill all fields");
+    else alert('Transfer Completed Successfuly');
 }
 
 function transfer() {

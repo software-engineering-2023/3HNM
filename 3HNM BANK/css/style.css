@@ -150,7 +150,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
+  background-image: url(../images/profile-icon.png);
   background-size: 22px;
   background-repeat: no-repeat;
   background-position-y: 7px;
@@ -158,6 +158,7 @@ a:focus {
   height: 35px;
   padding: 0;
   border: none;
+  margin-right: 20%;
 }
 
 .navbar-brand {
@@ -189,7 +190,7 @@ a:focus {
 }
 
 .custom_nav-container {
-  z-index: 99999;
+  z-index: 99;
   padding: 15px 0;
 }
 
@@ -304,7 +305,7 @@ a:focus {
   text-align: center;
   margin: 10px;
   min-width: 200px;
-  width: 325px;
+  width: 320px;
 }
 
 .how_section .how_container .box .img-box {
@@ -841,3 +842,5 @@ section.app_section .img-box img {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+/* Login page  */
