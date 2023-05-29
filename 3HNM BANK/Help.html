@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="css/style1.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="css/all.min.css" rel="stylesheet" />
@@ -59,7 +60,7 @@
         label {
             display: block;
             font-weight: bold;
-            margin-top
+
         }
 
         select,
@@ -88,12 +89,24 @@
 
 <body>
     <!-- header section strats -->
-    <header class="header">
+    <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <img src="logo3.png" width="100" height="50">
-        </div>
-        </nav>
+                <img src="logo3.png" width="100" height="50" style="margin-left: 30px;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                        <div class="user_option">
+                            <form class="dropdown form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="dropbtn btn  my-2 my-sm-0 nav_search-btn" onclick="Profile()">
+                                    <div class="dropdown-content">
+                                        <a href="index.html"> Log out</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -126,17 +139,10 @@
                             <li id="electricity"><a href="Electricity Bill.html">Electricity</a></li>
                         </ul>
                     </li>
-                    <li id="reminders"><a href="#" class="third-btn">Reminders
-                            <i class="fa-solid fa-caret-down third"></i>
-                        </a>
-                        <ul class="third-show">
-                            <li><a href="Set Reminder.html">Set Reminders</a></li>
-                            <li><a href="View Reminders.html">View Reminders</a></li>
-                        </ul>
-                    </li>
+                    <li id="reminder"><a href="View Reminders.html">Reminders</a></li>
                     <li><a href="Notifications.html">Notifications</a></li>
                     <li><a href="Announcements.html">Announcements</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li id="help"><a href="Help.html">Help</a></li>
                 </ul>
             </div>
             <!-- Header section ends  -->
@@ -168,6 +174,28 @@
             </div>
         </div>
     </main>
+    <script>
+        $('.first-btn').click(function () {
+            $('.sidebar .first-show').toggleClass("show");
+            $('.sidebar .first').toggleClass("rotate");
+        })
+
+        $('.second-btn').click(function () {
+            $('.sidebar .second-show').toggleClass("show1");
+            $('.sidebar .second').toggleClass("rotate");
+        })
+
+        $('.third-btn').click(function () {
+            $('.sidebar .third-show').toggleClass("show2");
+            $('.sidebar .third').toggleClass("rotate");
+
+        })
+
+        $("#help").addClass("active").siblings().removeClass("active");
+        $('.sidebar ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    </script>
 </body>
 
 </html>

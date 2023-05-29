@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="css/style1.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="css/all.min.css" rel="stylesheet" />
@@ -51,117 +52,123 @@
 
 <body>
     <!-- header section strats -->
-    <header class="header">
+    <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <img src="logo3.png" width="100" height="50">
-        </div>
-        </nav>
+                <img src="logo3.png" width="100" height="50" style="margin-left: 30px;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                        <div class="user_option">
+                            <form class="dropdown form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="dropbtn btn  my-2 my-sm-0 nav_search-btn" onclick="Profile()">
+                                    <div class="dropdown-content">
+                                        <a href="index.html"> Log out</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-    <div class="main">
-        <div class="column sidebar">
-            <ul>
-                <li id="dash"><a href="Dashboard.html">Dashboard</a></li>
-                <li id="tran"><a href="Transactions.html">Transactions</a></li>
-                <li id="transfers"><a href="#" class="first-btn">Transfers
-                        <i class="fa-solid fa-caret-down first"></i>
-                    </a>
-                    <ul class="first-show">
-                        <li id="internal"><a href="Internal Transfer.html">Internal Transfer</a></li>
-                        <li id="domestic"><a href="Domestic Transfer.html">Domestic Transfer</a></li>
-                        <li id="international"><a href="International Transfer.html">External Transfer</a></li>
-                        <li id="viewtrans"><a href="View All Transfers.html">View All Transfers</a></li>
-                    </ul>
-                </li>
-                <li id="credit"><a href="Credit Card.html">Credit Card</a></li>
-                <li><a href="Loan.html">Loans</a></li>
+    <main>
+        <div class="main">
+            <div class="column sidebar">
+                <ul>
+                    <li id="dash"><a href="Dashboard.html">Dashboard</a></li>
+                    <li id="tran"><a href="Transactions.html">Transactions</a></li>
+                    <li id="transfers"><a href="#" class="first-btn">Transfers
+                            <i class="fa-solid fa-caret-down first"></i>
+                        </a>
+                        <ul class="first-show">
+                            <li id="internal"><a href="Internal Transfer.html">Internal Transfer</a></li>
+                            <li id="domestic"><a href="Domestic Transfer.html">Domestic Transfer</a></li>
+                            <li id="international"><a href="International Transfer.html">External Transfer</a></li>
+                            <li id="viewtrans"><a href="View All Transfers.html">View All Transfers</a></li>
+                        </ul>
+                    </li>
+                    <li id="credit"><a href="Credit Card.html">Credit Card</a></li>
+                    <li id="Loan"><a href="Loan.html">Loans</a></li>
 
 
-                <li id="bills"><a href="#" class="second-btn">Pay Bills
-                        <i class="fa-solid fa-caret-down second"></i>
-                    </a>
-                    <ul class="second-show">
-                        <li id="gas"><a href="gas bill.html">Gas</a></li>
-                        <li id="water"><a href="Water Bill.html">Water</a></li>
-                        <li id="telephone"><a href="Telephone Bill.html">Telephone</a></li>
-                        <li id="electricity"><a href="Electricity Bill.html">Electricity</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="third-btn">Reminders
-                        <i class="fa-solid fa-caret-down third"></i>
-                    </a>
-                    <ul class="third-show">
-                        <li><a href="#">Set Reminders</a></li>
-                        <li><a href="#">View Reminders</a></li>
-                    </ul>
-                </li>
-                <li><a href="Notifications.html">Notifications</a></li>
-                <li><a href="Announcements.html">Notifications</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
+                    <li id="bills"><a href=" #" class="second-btn">Pay Bills
+                            <i class="fa-solid fa-caret-down second"></i>
+                        </a>
+                        <ul class="second-show">
+                            <li id="gas"><a href="gas bill.html">Gas</a></li>
+                            <li id="water"><a href="Water Bill.html">Water</a></li>
+                            <li id="telephone"><a href="Telephone Bill.html">Telephone</a></li>
+                            <li id="electricity"><a href="Electricity Bill.html">Electricity</a></li>
+                        </ul>
+                    </li>
+                    <li id="reminder"><a href="View Reminders.html">Reminders</a></li>
+                    <li><a href="Notifications.html">Notifications</a></li>
+                    <li><a href="Announcements.html">Announcements</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                </ul>
+            </div>
+            <!-- Header section ends  -->
+            <div class="column middle">
+                <h1>Gas Bill Receipt</h1>
+                <div class="client-info">
+                    <p>Bill ID: 2347698</p>
+                    <p>Customer ID: 982732</p>
+                    <p>Date: 25/5/2023</p>
+                </div>
+                <div class="bill-details">
+                    <table>
+                        <tr>
+                            <th>Q</th>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                            <th>Amount</th>
+                            <th> </th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Charges of the month</td>
+                            <td>June, 6th</td>
+                            <td>300</td>
+                            <td id="rembutton"><input type="button" value="Set Reminder" onclick="setReminder()"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>state tax</td>
+                            <td></td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="total">
+                    <strong>Total Amount:</strong> $315.00 <br><br>
+                    <button onclick="alert('Payment successful')"> Pay Now</button>
+                </div>
+
+            </div>
         </div>
-        <!-- end of sidebar section-->
-        <div class="column middle">
-            <h1>Gas Bill Receipt</h1>
-            <div class="client-info">
-                <p>Bill ID: 2347698</p>
-                <p>Customer ID: 982732</p>
-                <p>Date: 25/5/2023</p>
-            </div>
-            <div class="bill-details">
-                <table>
-                    <tr>
-                        <th>Q</th>
-                        <th>Description</th>
-                        <th>Due Date</th>
-                        <th>Amount</th>
-                        <th> </th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Charges of the month</td>
-                        <td>June, 6th</td>
-                        <td>300</td>
-                        <td id="rembutton"><input type="button" value="Set Reminder" onclick="setReminder()"></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>state tax</td>
-                        <td></td>
-                        <td>15</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="total">
-                <strong>Total Amount:</strong> $315.00 <br><br>
-                <button onclick="alert('Payment successful')"> Pay Now</button>
-            </div>
+        <script>
+            $('.first-btn').click(function () {
+                $('.sidebar .first-show').toggleClass("show");
+                $('.sidebar .first').toggleClass("rotate");
+            })
 
-        </div>
-    </div>
-    <script>
-        $('.first-btn').click(function () {
-            $('.sidebar .first-show').toggleClass("show");
-            $('.sidebar .first').toggleClass("rotate");
-        })
+            $('.second-btn').click(function () {
+                $('.sidebar .second-show').toggleClass("show1");
+                $('.sidebar .second').toggleClass("rotate");
+            })
 
-        $('.second-btn').click(function () {
-            $('.sidebar .second-show').toggleClass("show1");
-            $('.sidebar .second').toggleClass("rotate");
-        })
+            $('.third-btn').click(function () {
+                $('.sidebar .third-show').toggleClass("show2");
+                $('.sidebar .third').toggleClass("rotate");
 
-        $('.third-btn').click(function () {
-            $('.sidebar .third-show').toggleClass("show2");
-            $('.sidebar .third').toggleClass("rotate");
+            })
 
-        })
-
-        $("#bills").addClass("active").siblings().removeClass("active");
-        $('.sidebar ul li').click(function () {
-            $(this).addClass("active").siblings().removeClass("active");
-        })
-    </script>
+            $("#bills").addClass("active").siblings().removeClass("active");
+            $('.sidebar ul li').click(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+        </script>
 </body>
 
 </html>
