@@ -502,10 +502,11 @@ thead {
     display: flex;
     width: 92%;
     height: 25%;
-    border: 2px solid blueviolet;
+    border: 2px solid #cbd5cb;
     /* background-color: blue; */
     margin: auto;
     padding-top: 5%;
+    background-color: #f1f1f1;
 }
 
 .Loan-calc {
@@ -520,7 +521,13 @@ thead {
     width: 50%;
     height: 100%;
     float: right;
-    padding: 30px;
+    padding: 20px;
+    /* background-color: aquamarine; */
+}
+
+.Loan-calc-result p {
+    font-size: larger;
+    padding: 10px;
     /* background-color: aquamarine; */
 }
 
