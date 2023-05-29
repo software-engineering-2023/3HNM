@@ -1,0 +1,858 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*HEADER SECTION*/
+.header {
+    background-color: #151618;
+}
+
+.header .container-fluid {
+    padding-right: 25px;
+    padding-left: 4.5%;
+}
+
+/* HEADER SECTION ENDS */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.main {
+    height: 1500px;
+    display: -webkit-flex;
+    display: flex;
+    background-image: url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg);
+}
+
+/* Left and right column */
+.sidebar {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+}
+
+.column.side {
+    -webkit-flex: 1.3;
+    -ms-flex: 1.3;
+    flex: 1.3;
+}
+
+/* Middle column */
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*Sidebar design*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background-color: #151618;
+    color: #fff;
+    padding: 20px;
+    padding-top: 4%;
+    float: left;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding-left: 30px;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    width: 100%;
+}
+
+.sidebar ul li.active a {
+    color: greenyellow;
+    background-color: #1e1e1e;
+    border-left-color: greenyellow;
+}
+
+.sidebar ul li.active ul li a {
+    color: rgb(254, 254, 253);
+    background-color: #151815;
+    border-left-color: transparent;
+}
+
+.sidebar ul ul li a:hover {
+    color: greenyellow !important;
+    background-color: #1e1e1e !important;
+}
+
+.sidebar ul li a:hover {
+    color: greenyellow;
+    background-color: #1e1e1e;
+}
+
+
+.sidebar ul ul {
+    position: static;
+    display: none;
+}
+
+.sidebar ul ul li {
+    border-bottom: none;
+    line-height: 30px;
+}
+
+.sidebar ul ul li a {
+    font-size: 15px;
+    padding-left: 60px;
+}
+
+.sidebar ul li a i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+.sidebar ul li a i.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.sidebar ul .first-show.show {
+    display: block;
+}
+
+.sidebar ul .second-show.show1 {
+    display: block;
+}
+
+.sidebar ul .third-show.show2 {
+    display: block;
+}
+
+/* sidebar ends*/
+
+
+
+
+
+
+
+
+
+
+/* DASHBOARD STARTS */
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr {
+    border-color: #D8D8D8;
+    border-style: solid;
+    border-width: 1px 0 0;
+    line-height: 2em;
+    font-size: 14px;
+}
+
+table tr td a {
+    padding-left: 20%;
+}
+
+table tr td td {
+    padding: 10px;
+}
+
+table th {
+    font-size: 14pt;
+}
+
+table td {
+    font-size: 12pt;
+}
+
+h3 {
+    height: 60px;
+    text-align: left;
+    padding: 15px;
+    padding-left: 30px;
+    margin: 0%;
+}
+
+.container {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.boxheader {
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #cbd5cb;
+}
+
+.accountInfobox {
+    width: 90%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 45px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#account {
+    height: 215px;
+}
+
+#transactions {
+    height: 225px;
+}
+
+.contentbox {
+    padding: 20px;
+    padding-top: 10px;
+    border-top: transparent;
+}
+
+.accountInfobox table th,
+.accountInfobox table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.transactionsbox {
+    width: 90%;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.transactionsbox table th,
+.transactionsbox table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.reminderbox {
+    width: 80%;
+    background-color: #fff;
+    margin-bottom: 40px;
+    margin-top: 14.7%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reminderbox table {
+    text-align: left;
+
+}
+
+.child_row {
+    border-style: dotted;
+}
+
+.requestbox {
+    width: 80%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container {
+    padding-top: 5%;
+}
+
+thead {
+    background-color: #cbd5cb;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
+
+/* DASHBOARD ENDS  */
+
+
+
+
+
+
+
+
+/* TRANSACTIONS PAGE*/
+#Transactionshistory {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* TRANSACTIONS END  */
+
+
+/* CREDIT CARD PAGE */
+#creditcardtransactions {
+    margin-bottom: 20px;
+}
+
+#creditcardInfo {
+    margin-bottom: 40px;
+}
+
+.credit-side-container {
+    margin-top: 30%;
+}
+
+.credit-side {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+#problem-credit {
+    text-align: left;
+}
+
+#problem-credit h4 {
+    text-align: center;
+}
+
+#redeem {
+    margin: 10px;
+    font-size: 12pt;
+}
+
+.prob-btn {
+    margin: 5px;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#creditcardInfo th,
+#creditcardtransactions th {
+    background-color: #cbd5cb;
+}
+
+#creditcardInfo,
+#creditcardtransactions td {
+    background-color: #fff;
+}
+
+.head {
+    padding: 0%;
+    margin-bottom: 10px;
+    border-color: gray;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #cbd5cb;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-style: dashed;
+    width: 100%;
+    font-size: 14pt;
+}
+
+.partialpay {
+    margin: 10px;
+    display: none;
+}
+
+.fullpay {
+    margin: 10px;
+    display: none;
+}
+
+.partialpay.active {
+    display: block;
+}
+
+.fullpay.active {
+    display: block
+}
+
+#prob-content {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* CREDIT CARD APPLICATION  */
+.credit-app {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #f9f9f9;
+    text-align: left;
+    border: 0.5px solid gray;
+    padding: 30px;
+}
+
+.credit-words {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    /* border: 3px solid salmon; */
+    float: left;
+    margin-left: 8%;
+    margin-top: 10px;
+    padding: 10px;
+    width: 30%;
+}
+
+.credit-words p {
+    padding-bottom: 15px;
+}
+
+.credit-inputs {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    flex-direction: column;
+    height: calc(38vh - 100px);
+    /* border: 3px solid seagreen; */
+    float: right;
+    margin-right: 30%;
+    margin-top: 10px;
+}
+
+#credit-card {
+    display: none;
+}
+
+#credit-card.active {
+    display: block;
+}
+
+#creditsubmit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#applycredit {
+    margin-top: 0;
+
+}
+
+/* CREDIT CARD ENDS  */
+
+
+
+
+
+
+
+
+/* LOAN PAGE  */
+.Loan-cont {
+    display: flex;
+    width: 92%;
+    height: 25%;
+    border: 2px solid #cbd5cb;
+    /* background-color: blue; */
+    margin: auto;
+    padding-top: 5%;
+    background-color: #f1f1f1;
+}
+
+.Loan-calc {
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.Loan-calc-result {
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 20px;
+    /* background-color: aquamarine; */
+}
+
+.Loan-calc-result p {
+    font-size: larger;
+    padding: 10px;
+    /* background-color: aquamarine; */
+}
+
+.calc {
+    margin: 10px;
+}
+
+input[type=radio] {
+    margin: 10px;
+}
+
+#Calculate {
+    margin: 10px;
+}
+
+.Loan-app {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 25%;
+    border: 2px solid blueviolet;
+    /* background-color: blue; */
+    margin: auto;
+}
+
+.personal-app {
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* background-color: aqua; */
+    text-align: left;
+    border: 2px solid blueviolet;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.personal-words {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    /* border: 3px solid salmon; */
+    float: left;
+    margin-top: 20px;
+    width: 200px;
+    padding-right: 0;
+
+}
+
+.personal-inputs {
+    -webkit-flex: 0.2;
+    -ms-flex: 0.2;
+    flex: 0.2;
+    flex-direction: column;
+    height: calc(38vh - 100px);
+    /* border: 3px solid seagreen; */
+    float: right;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+.loan {
+    margin-bottom: 10px;
+}
+
+.car-app {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    border: 2px solid blue;
+    padding: 30px;
+}
+
+.car-words {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    /* border: 3px solid salmon; */
+    float: left;
+    margin-left: 8%;
+    margin-top: 20px;
+}
+
+.car-inputs {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    flex-direction: column;
+    height: calc(38vh - 100px);
+    /* border: 3px solid seagreen; */
+    float: right;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+#personal-loan {
+    display: none;
+}
+
+#car-loan {
+    display: none;
+}
+
+#personal-loan.active {
+    display: block;
+}
+
+#car-loan.active {
+    display: block;
+}
+
+/* LOAN PAGE ENDS  */
+
+
+
+
+
+
+
+
+/* GAS BILL  */
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    margin: 0%;
+    text-align: justify;
+    margin-left: 20%;
+}
+
+.client-info {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.bill-details {
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.total {
+    margin-right: 20%;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total strong {
+    font-weight: bold;
+}
+
+/* GAS BILL ENDS  */
+
+.reminderbox1 {
+    width: 80%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.reminderbox1 table {
+    text-align: left;
+
+}
+
+.child_row {
+    border-style: dotted;
+}
+
+#reminder-type {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+/* REMINDER ENDS  */
+
+/* PROFILE BUTTON  */
+
+
+/* NOTIFICATIONS PAGE  */
+.notification-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: #f1f1f1;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.notification.new {
+    background-color: #cbd5cb;
+}
+
+.notification-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #268426;
+    margin-right: 10px;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.notification-content p {
+    margin: 5px 0;
+}
+
+/* NOTIFICATION ENDS  */
+
+
+.dropbtn {
+    width: 100%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-right: 10%;
+    height: 80px;
+    text-align: left;
+    align-items: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding-left: 0%;
+    padding-top: 10%;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* POPUP DESIGN  */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-box {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.send-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+}
+
+/* POPUP DESIGN ENDS  */

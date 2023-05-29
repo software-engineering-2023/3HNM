@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Payment Reminder</h1>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="payment-name">Payment Name:</label>
+                <input type="text" id="payment-name" placeholder="Enter payment name" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-date">Payment Date:</label>
+                <input type="date" id="payment-date" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-time">Payment Time:</label>
+                <input type="time" id="payment-time" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-notes">Payment Notes:</label>
+                <textarea id="payment-notes" placeholder="Enter additional notes"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Set Payment Reminder">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

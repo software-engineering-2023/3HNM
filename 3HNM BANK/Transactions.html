@@ -1,0 +1,216 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!-- Site Metas -->
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<title>Transactions</title>
+
+<!-- slider stylesheet -->
+<!-- slider stylesheet -->
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+    type='text/css'>
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+<!-- fonts style -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="css/style1.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<!-- responsive style -->
+<link href="css/responsive.css" rel="stylesheet" />
+<link href="css/all.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<title>Transaction History</title>
+<style>
+    th,
+    td {
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+</style>
+</head>
+
+<body>
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <img src="logo3.png" width="100" height="50" style="margin-left: 30px;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                        <div class="user_option">
+                            <form class="dropdown form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="dropbtn btn  my-2 my-sm-0 nav_search-btn" onclick="Profile()">
+                                    <div class="dropdown-content">
+                                        <a href="index.html"> Log out</a>
+                                    </div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="column sidebar">
+                <ul>
+                    <li id="dash"><a href="Dashboard.html">Dashboard</a></li>
+                    <li id="tran"><a href="Transactions.html">Transactions</a></li>
+                    <li id="transfers"><a href="#" class="first-btn">Transfers
+                            <i class="fa-solid fa-caret-down first"></i>
+                        </a>
+                        <ul class="first-show">
+                            <li id="internal"><a href="Internal Transfer.html">Internal Transfer</a></li>
+                            <li id="domestic"><a href="Domestic Transfer.html">Domestic Transfer</a></li>
+                            <li id="international"><a href="International Transfer.html">External Transfer</a></li>
+                            <li id="viewtrans"><a href="View All Transfers.html">View All Transfers</a></li>
+                        </ul>
+                    </li>
+                    <li id="credit"><a href="Credit Card.html">Credit Card</a></li>
+                    <li id="Loan"><a href="Loan.html">Loans</a></li>
+
+
+                    <li><a href="#" class="second-btn">Pay Bills
+                            <i class="fa-solid fa-caret-down second"></i>
+                        </a>
+                        <ul class="second-show">
+                            <li id="gas"><a href="gas bill.html">Gas</a></li>
+                            <li id="water"><a href="Water Bill.html">Water</a></li>
+                            <li id="telephone"><a href="Telephone Bill.html">Telephone</a></li>
+                            <li id="electricity"><a href="Electricity Bill.html">Electricity</a></li>
+                        </ul>
+                    </li>
+                    <li id="reminder"><a href="View Reminders.html">Reminders</a></li>
+                    <li><a href="Notifications.html">Notifications</a></li>
+                    <li><a href="Announcements.html">Announcements</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                </ul>
+            </div>
+            <!-- Header section ends  -->
+            <div class="column middle">
+                <div class="container">
+                    <h2 style="text-align: center; margin-bottom: 20px;">Transaction History</h2>
+                    <table id="Transactionshistory">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                                <th>Available Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023-05-30</td>
+                                <td>Domestic Transfer</td>
+                                <td>700</td>
+                                <td>$836.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>2023-05-30</td>
+                                <td>Internal Transfer</td>
+                                <td>250</td>
+                                <td>$1536.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>2023-05-30</td>
+                                <td>External Transfer</td>
+                                <td>14000</td>
+                                <td>$1786.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>2023-05-13</td>
+                                <td>Domestic Transfer</td>
+                                <td>2384</td>
+                                <td>$15786.00</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-26</td>
+                                <td>Online Purchase</td>
+                                <td>$50.00</td>
+                                <td>$18170.00</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-23</td>
+                                <td>Credit Card bill</td>
+                                <td>$70.00</td>
+                                <td>$18220.00</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-20</td>
+                                <td>Withdrawal</td>
+                                <td>$160.00</td>
+                                <td>$18290.00</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-18</td>
+                                <td>Online Purchase</td>
+                                <td>$50.00</td>
+                                <td>$18450.00</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-15</td>
+                                <td>Salary Deposit</td>
+                                <td>$1500.00</td>
+                                <td>$18500.00</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-10</td>
+                                <td>ATM Withdrawal</td>
+                                <td>$100.00</td>
+                                <td>$20000.00</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">Hi</div>
+        <script>
+
+            $('.first-btn').click(function () {
+                $('.sidebar .first-show').toggleClass("show");
+                $('.sidebar .first').toggleClass("rotate");
+            })
+
+            $('.second-btn').click(function () {
+                $('.sidebar .second-show').toggleClass("show1");
+                $('.sidebar .second').toggleClass("rotate");
+            })
+
+            $('.third-btn').click(function () {
+                $('.sidebar .third-show').toggleClass("show2");
+                $('.sidebar .third').toggleClass("rotate");
+
+            })
+
+            $("#tran").addClass("active").siblings().removeClass("active");
+            $('.sidebar ul li').click(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+        </script>
+</body>
+
+
+</body>
+
+</html>
