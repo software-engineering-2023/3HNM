@@ -30,6 +30,7 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="css/all.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="User.js"></script>
     <title>International Transfer</title>
     <style>
         h2 {
@@ -44,6 +45,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             padding: 20px;
+            margin-top: 5%;
         }
 
         .form-group {
@@ -138,16 +140,6 @@
                         <input type="date" id="transferDate" name="transferDate" required>
                     </div>
                     <div class="form-group">
-                        <label for="paymentFrom">Payment From Account:</label>
-                        <select id="paymentFrom" name="paymentFrom" required>
-                            <option value="">Select Account</option>
-                            <option value="account1">Account 1</option>
-                            <option value="account2">Account 2</option>
-                            <option value="account3">Account 3</option>
-                        </select>
-                    </div>
-                    <h3>Transfer Details</h3>
-                    <div class="form-group">
                         <label for="accountName">Account Name:</label>
                         <input type="text" id="accountName" name="accountName" required>
                     </div>
@@ -171,10 +163,10 @@
                         <label for="transferDescription">Transfer Description:</label>
                         <textarea id="transferDescription" name="transferDescription" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" value="Transfer">
-                    </div>
                 </form>
+                <div class="form-group">
+                    <input type="button" value="Transfer" onclick="transfer()">
+                </div>
             </div>
             <script>
 
@@ -199,6 +191,17 @@
                 $('.sidebar ul li').click(function () {
                     $(this).addClass("active").siblings().removeClass("active");
                 })
+
+                // function transfer() {
+                //     let valid = true;
+                //     $('[required]').each(function () {
+                //         if ($(this).is(':invalid') || !$(this).val()) valid = false;
+                //     })
+                //     if (!valid) alert("Please fill all fields");
+                //     else alert('Transfer Completed Successfuly');
+                // }
+
+
             </script>
 </body>
 
