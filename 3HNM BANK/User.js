@@ -49,3 +49,12 @@ function helpsubmit() {
     }
 }
 
+function transfer() {
+    let valid = true;
+    $('[required]').each(function () {
+        if ($(this).is(':invalid') || !$(this).val()) valid = false;
+    })
+    if (!valid) alert("error please fill all fields!");
+    else alert('Transfer Completed Successfully');
+}
+
