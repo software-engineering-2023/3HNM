@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banker theft report Webpage</title>
+</head>
+<body>
+  <h1>Client Theft Reports</h1>
+  <table>
+    <tr>
+      <th>Customer ID</th>
+      <th>Date of Report</th>
+      <th>Status</th>
+      <th>Date of Disabling</th>
+    </tr>
+    <tr>
+      <td>01995550873347</td>
+      <td>5/23/2023</td>
+      <td>Disabled</td>
+      <td><button Button ="Disable">Disable Credit Card</button></td>\
+      <td>5/23/2023</td>
+    </tr>
+    <tr>
+        <td>019996873347</td>
+        <td>5/23/2023</td>
+        <td>Disabled</td>
+        <td><button Button ="Disable">Disable Credit Card</button></td>
+        <td>5/23/2023</td>
+    </tr>
+    <tr>
+        <td>01995550890347</td>
+        <td>5/23/2023</td>
+        <td>Abled</td>
+        <td><button onclick ="Disable()">Disable Credit Card</button></td>
+        <td>" "</td>
+
+    </tr>
+    <tr>
+        <td>01995550873347</td>
+        <td>5/23/2023</td>
+        <td>Abled</td>
+        <td><button onclick ="Disable()">Disable Credit Card</button></td>
+        <td>" "</td>
+      </tr>
+  </table>
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .popup-header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .close-button {
+  float: right;
+  cursor: pointer;
+}
+  </style>
+
+<div id="myPopup" class="popup">
+    <span class="close-button" onclick="closePopup()">&times;</span>
+    <div class="popup-header">Credit card disabled succesfully!</div>
+  </div>
+  <script>
+    function Disable() {
+      // Get the popup element
+      var popup = document.getElementById("myPopup");
+
+      // Show the popup
+      popup.style.display = "block";
+    }
+    function closePopup() {
+      var popup = document.getElementById("myPopup");
+      popup.style.display = "none";
+    }
+    </script>
+</body>
+</html>
