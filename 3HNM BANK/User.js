@@ -58,3 +58,49 @@ function transfer() {
     else alert('Transfer Completed Successfully');
 }
 
+
+function calculate() {
+    let amount = document.getElementById('loanamount').value;
+    let duration = document.getElementById('duration').value;
+
+    if (document.getElementById('personal').checked) {
+        let interest = amount * 0.14;
+        let payment = (amount + interest) / duration;
+        document.getElementById('total-loan').textContent = `Total Loan: ${amount}`;
+        document.getElementById('Interest Rate').textContent = `Interest Rate: 14%`;
+        document.getElementById('interest-amount').textContent = `Total Interest: ${interest}`;
+        document.getElementById('pay-month').textContent = `Payment Per Month: ${payment}`;
+    }
+
+    if (document.getElementById('Car').checked) {
+        let interest = amount * 0.05;
+        let payment = (amount + interest) / duration;
+        document.getElementById('total-loan').textContent = `Total Loan: ${amount}`;
+        document.getElementById('Interest Rate').textContent = `Interest Rate: 5%`;
+        document.getElementById('interest-amount').textContent = `Total Interest: ${interest}`;
+        document.getElementById('pay-month').textContent = `Payment Per Month: ${payment}`;
+    }
+}
+
+
+function respond() {
+    // Get the popup element
+    var popup = document.getElementById("myPopup");
+
+    // Show the popup
+    popup.style.display = "block";
+}
+
+function sendMessage() {
+    var input = document.querySelector("#myPopup .text-box");
+    var message = input.value;
+    // Perform any necessary actions with the message (e.g., send it to a server, display it somewhere, etc.)
+    console.log("Message sent:", message);
+    input.value = ""; // Clear the input field
+    closePopup(); // Close the popup
+}
+
+function closePopup() {
+    var popup = document.getElementById("myPopup");
+    popup.style.display = "none";
+}
